@@ -3,12 +3,12 @@ import axios from 'axios';
 
 axios.defaults.headers.post['Content-Type'] = 'application/json';
 
-export const categoryAdd = data => {
+export const materialAddAction = data => {
   return async dispatch => {
     try {
-      const category = await axios.post(`/api/categories`, data);
+      const material = await axios.post(`/api/materials`, data);
 
-      dispatch(actions.categoryAdd(category.data.data));
+      dispatch(actions.materialAdd(material.data.data));
       dispatch(actions.successGlobal());
     } catch (error) {
       dispatch(actions.errorGlobal(error));
@@ -16,12 +16,12 @@ export const categoryAdd = data => {
   };
 };
 
-export const categoryAll = () => {
+export const materialAllAction = () => {
   return async dispatch => {
     try {
-      const categories = await axios.get(`/api/categories`);
+      const materials = await axios.get(`/api/materials`);
 
-      dispatch(actions.categoryGetAll(categories.data.data));
+      dispatch(actions.materialsGetAll(materials.data.data));
     } catch (error) {
       dispatch(actions.errorGlobal(error));
     }

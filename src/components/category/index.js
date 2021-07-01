@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
-import { Container, Typography, TextField } from '@material-ui/core';
 import { useDispatch, useSelector } from 'react-redux';
+import { Container, Typography, TextField } from '@material-ui/core';
 
 import CategoryTable from './categoryTable';
 

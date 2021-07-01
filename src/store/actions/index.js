@@ -1,6 +1,10 @@
 import {
   CATEGORY_GET_ALL,
   CATEGORY_ADD,
+  ASSETS_GET_ALL,
+  ASSET_ADD,
+  MATERIALS_GET_ALL,
+  MATERIAL_ADD,
   ERROR_GLOBAL,
   SUCCESS_GLOBAL,
   CLEAR_NOTIFICATION,
@@ -15,6 +19,28 @@ export const categoryGetAll = data => ({
 export const categoryAdd = category => ({
   type: CATEGORY_ADD,
   payload: category,
+});
+
+// ASSETS
+export const assetsGetAll = data => ({
+  type: ASSETS_GET_ALL,
+  payload: data,
+});
+
+export const assetAdd = asset => ({
+  type: ASSET_ADD,
+  payload: asset,
+});
+
+// MATERIALS
+export const materialsGetAll = data => ({
+  type: MATERIALS_GET_ALL,
+  payload: data,
+});
+
+export const materialAdd = material => ({
+  type: MATERIAL_ADD,
+  payload: material,
 });
 
 /// NOTIFICATIONS

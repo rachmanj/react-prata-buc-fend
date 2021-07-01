@@ -2,10 +2,14 @@
 export const CATEGORY_ADD = 'category_add';
 export const CATEGORY_GET_ALL = 'category_get_all';
 
-// products
-export const PRODUCT_GET_ALL = 'product_get_all';
+// Assets
+export const ASSETS_GET_ALL = 'assets_get_all';
+export const ASSET_ADD = 'asset_add';
 
-// notifications
+// Materials
+export const MATERIALS_GET_ALL = 'materials_get_all';
+export const MATERIAL_ADD = 'material_add';
+
 // notifications
 export const ERROR_GLOBAL = 'error_global';
 export const SUCCESS_GLOBAL = 'success_global';
