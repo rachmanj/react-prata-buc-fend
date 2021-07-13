@@ -53,7 +53,7 @@ const AddAsset = props => {
   return (
     <>
       <Container style={{ marginTop: '20px' }}>
-        <div page_title_wrapper>
+        <div className="page_title_wrapper">
           <Typography variant="h4">Add Category</Typography>
         </div>
         <form onSubmit={formik.handleSubmit}>

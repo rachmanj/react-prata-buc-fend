@@ -10,6 +10,10 @@ export const ASSET_ADD = 'asset_add';
 export const MATERIALS_GET_ALL = 'materials_get_all';
 export const MATERIAL_ADD = 'material_add';
 
+/// Transactions
+export const TRANSACTIONS_GET_ALL = 'transactions_get_all';
+export const TRANSACTION_ADD = 'transaction_add';
+
 // notifications
 export const ERROR_GLOBAL = 'error_global';
 export const SUCCESS_GLOBAL = 'success_global';

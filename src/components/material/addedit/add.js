@@ -1,4 +1,4 @@
-import Reat, { useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { useFormik } from 'formik';
 import { useDispatch, useSelector } from 'react-redux';
 

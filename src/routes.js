@@ -13,6 +13,7 @@ import AddAsset from 'components/product/addedit/add';
 import MaterialPage from 'components/material';
 import AddMaterial from 'components/material/addedit/add';
 import TransactionPage from 'components/transaction';
+import AddTransaction from 'components/transaction/addedit/add';
 
 const Routes = () => {
   return (
@@ -26,6 +27,10 @@ const Routes = () => {
           <Route path="/categories" component={CategoryPage} />
           <Route path="/materials/add_material" component={AddMaterial} />
           <Route path="/materials" component={MaterialPage} />
+          <Route
+            path="/transactions/add_transaction"
+            component={AddTransaction}
+          />
           <Route path="/transactions" component={TransactionPage} />
           <Route path="/" exact component={Home} />
         </Switch>

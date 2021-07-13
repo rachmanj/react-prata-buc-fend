@@ -2,6 +2,7 @@ import { combineReducers } from 'redux';
 import categories from './category.reducer';
 import assets from './assets.reducer';
 import materials from './material.reducer';
+import transactions from './transaction.reducer';
 import notifications from './notification.reducer';
 
 const appReducers = combineReducers({
@@ -9,6 +10,7 @@ const appReducers = combineReducers({
   notifications,
   assets,
   materials,
+  transactions,
 });
 
 export default appReducers;

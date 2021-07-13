@@ -25,6 +25,7 @@ const MaterialPage = () => {
             Material List
           </Typography>
         </div>
+        <hr />
         <div style={{ marginBottom: '10px' }}>
           <Link to="/materials/add_material" style={{ textDecoration: 'none' }}>
             <Button

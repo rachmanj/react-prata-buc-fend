@@ -5,6 +5,8 @@ import {
   ASSET_ADD,
   MATERIALS_GET_ALL,
   MATERIAL_ADD,
+  TRANSACTIONS_GET_ALL,
+  TRANSACTION_ADD,
   ERROR_GLOBAL,
   SUCCESS_GLOBAL,
   CLEAR_NOTIFICATION,
@@ -41,6 +43,17 @@ export const materialsGetAll = data => ({
 export const materialAdd = material => ({
   type: MATERIAL_ADD,
   payload: material,
+});
+
+// TRANSACTIONS
+export const transactionsGetAll = data => ({
+  type: TRANSACTIONS_GET_ALL,
+  payload: data,
+});
+
+export const transactionAdd = transaction => ({
+  type: TRANSACTION_ADD,
+  payload: transaction,
 });
 
 /// NOTIFICATIONS
