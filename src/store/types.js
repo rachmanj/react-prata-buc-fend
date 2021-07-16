@@ -13,6 +13,7 @@ export const MATERIAL_ADD = 'material_add';
 /// Transactions
 export const TRANSACTIONS_GET_ALL = 'transactions_get_all';
 export const TRANSACTION_ADD = 'transaction_add';
+export const TESTING_ADD = 'testing_add';
 
 // notifications
 export const ERROR_GLOBAL = 'error_global';

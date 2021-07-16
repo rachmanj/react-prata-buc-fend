@@ -7,6 +7,7 @@ import {
   MATERIAL_ADD,
   TRANSACTIONS_GET_ALL,
   TRANSACTION_ADD,
+  TESTING_ADD,
   ERROR_GLOBAL,
   SUCCESS_GLOBAL,
   CLEAR_NOTIFICATION,
@@ -54,6 +55,11 @@ export const transactionsGetAll = data => ({
 export const transactionAdd = transaction => ({
   type: TRANSACTION_ADD,
   payload: transaction,
+});
+
+export const testingAdd = data => ({
+  type: TESTING_ADD,
+  payload: data,
 });
 
 /// NOTIFICATIONS

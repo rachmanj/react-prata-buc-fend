@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { Container, Typography, Button } from '@material-ui/core';
@@ -8,12 +8,10 @@ import { materialAllAction } from 'store/actions/material.action';
 import MaterialTable from './materialTable';
 
 const MaterialPage = () => {
-  const [loading, setLoading] = useState(false);
   const materials = useSelector(state => state.materials.all);
   const dispatch = useDispatch();
 
   useEffect(() => {
-    setLoading(true);
     dispatch(materialAllAction());
   }, [dispatch]);
 
